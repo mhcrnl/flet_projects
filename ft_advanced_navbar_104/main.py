@@ -1,7 +1,7 @@
 import flet as ft
 
 
-class Header(ft.UserControl):
+class Header(ft.Container):
     def __init__(self):
         self.nav = ft.Container(
             opacity=1,
@@ -103,4 +103,4 @@ def main(page: ft.Page):
 
 
 if __name__ == "__main__":
-    ft.flet.app(target=main)
+    ft.flet.run(main)

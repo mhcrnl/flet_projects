@@ -9,7 +9,7 @@ fm.Theme.set_theme(theme=PRIMARY)
 dummy_user_list: list = [["line.indent@gmail.com", 123123123]]
 
 
-class CustomInputField(ft.UserControl):
+class CustomInputField(ft.Container):
     def __init__(self, password: bool, title: str):
         self.input = ft.TextField(
             height=45,
@@ -117,7 +117,7 @@ class CustomInputField(ft.UserControl):
         return self.object
 
 
-class MainFormUI(ft.UserControl):
+class MainFormUI(ft.Container):
     def __init__(self):
         #
         self.email = CustomInputField(False, "Email")

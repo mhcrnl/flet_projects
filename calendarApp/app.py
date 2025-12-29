@@ -245,11 +245,17 @@ def main(page: ft.Page):
     page.bgcolor = "#1f2128"
 
     task_manager = TaskManager()
-
+    ''' 
+    page.appbar = ft.AppBar(
+        leading=ft.Icons(ft.Icons.PALETTE),
+        leading_width=40,
+       ) 
+    '''
     # first instance, we need to pass current month and year...
     grid = DateGrid(
         year=Settings.get_year(), month=Settings.get_month(), task_instance=task_manager
     )
+    
 
     page.add(
         ft.Column(

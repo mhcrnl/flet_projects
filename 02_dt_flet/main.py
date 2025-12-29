@@ -96,7 +96,7 @@ def search_bar(control: ft.TextField):
             vertical_alignment="center",
             controls=[
                 ft.Icon(
-                    name=ft.icons.SEARCH_ROUNDED,
+                    name=ft.Icons.SEARCH_ROUNDED,
                     size=17,
                     opacity=0.85,
                 ),

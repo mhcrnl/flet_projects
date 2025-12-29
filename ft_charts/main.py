@@ -45,7 +45,7 @@ BTC = [
 ]
 
 
-class RealTimeChart(ft.UserControl):
+class RealTimeChart(ft.Container):
     def __init__(self):
         #
         self.y_labels: list = []
